@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+    width: 350px;
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+    padding: 30px;
+    border-radius: 9px;
+    background-color: aliceblue;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 90%;
+    height: 20px;
+    margin-bottom: 12px;
+    margin-top: 7px;
+    background:linear-gradient(90deg,rgb(255, 255, 255),rgba(0, 229, 255, 0.304),rgb(0, 132, 255));
+    border: 2px solid darkcyan ;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+button{
+    margin-top: 10px;
+    height: 30px;
+    background:linear-gradient(90deg,rgb(255, 255, 255),rgba(0, 229, 255, 0.304),rgb(0, 132, 255));
+    border-radius: 8px;
+    border: 2px solid darkcyan ;
+    width: 95%;
+    cursor: pointer;
+}
+button:hover{
+    background:linear-gradient(90deg,rgb(0, 132, 255),rgba(0, 229, 255, 0.304),rgb(255, 255, 255));
+}
+.tacheNombre, .tacheCelular, .tacheCorreo{
+color: rgb(255, 0, 0);
+}
+.input-tache{
+    background:linear-gradient(90deg,rgb(255, 255, 255),rgba(250, 104, 104, 0.705),rgb(255, 0, 0));
+    border: 2px solid rgb(255,0,0);
+}
+.input-buena{
+    background:linear-gradient(90deg,rgb(255, 255, 255),rgb(160, 253, 139),rgb(0, 255, 17));
+    border: 2px solid rgb(0, 255, 34);
+}
+.buenaNombre, .buenaCelular, .buenaCorreo{
+    color: rgb(34, 255, 0);
+}
+.mensajeNombre, .mensajeCelular, .mensajeCorreo{
+    font-size: small;
+    color: rgb(255,0,0);
+}
+.ocultar{
+    display: none;
+}

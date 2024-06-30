@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Usuarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/formulario.js" defer></script>
+</head>
+<body>
+    <h1>Registro de usuarios</h1>
+    <div class="contenedor">
+        <form action="/agregarUsuario" method="post">
+            <label for="nombre">Nombre: </label><span class="ocultar mensajeNombre">(Nombre incorrecto)</span>
+            <input autofocus name="nombre" id="nombre" placeholder="Nombre" type="text">
+            <i class="ocultar tacheNombre fa-regular fa-circle-xmark"></i>
+            <i class="ocultar buenaNombre fa-regular fa-circle-check"></i>
+
+            <label for="celular">Celular: </label><span class="ocultar mensajeCelular">(Solo 10 números)</span>
+            <input name="celular" id="celular" placeholder="Celular" type="text">
+            <i class="ocultar tacheCelular fa-regular fa-circle-xmark"></i>
+            <i class="ocultar buenaCelular fa-regular fa-circle-check"></i>
+
+            <label for="correo">Correo: </label><span class="ocultar mensajeCorreo">(Correo no válido)</span>
+            <input name="correo" id="correo" placeholder="Correo" type="text">
+            <i class="ocultar tacheCorreo fa-regular fa-circle-xmark"></i>
+            <i class="ocultar buenaCorreo fa-regular fa-circle-check"></i>
+
+            <button type="submit">Registrar datos</button>
+        </form>        
+    </div>
+</body>
+</html>

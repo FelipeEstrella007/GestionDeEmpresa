@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/estilosProductos.css">
+    <script src="../js/formulario2.js" defer></script>
+</head>
+<body>
+    <h1>Registro de productos</h1>
+    <div class="contenedor">
+        <form action="/productos/agregarProducto" method="post">
+            <label for="nombre">Nombre: </label><span class="ocultar mensajeNombre">(Nombre incorrecto)</span>
+            <input autofocus name="nombre" id="nombre" placeholder="Nombre" type="text">
+            <i class="ocultar tacheNombre fa-regular fa-circle-xmark"></i>
+            <i class="ocultar buenaNombre fa-regular fa-circle-check"></i>
+
+            <label for="stock">Stock: </label><span class="ocultar mensajeStock">(Solo 10 números)</span>
+            <input name="stock" id="stock" placeholder="Stock" type="text">
+            <i class="ocultar tacheStock fa-regular fa-circle-xmark"></i>
+            <i class="ocultar buenaStock fa-regular fa-circle-check"></i>
+
+            <label for="precio">Precio: </label><span class="ocultar mensajePrecio">(Precio no válido)</span>
+            <input name="precio" id="precio" placeholder="Precio" type="text">
+            <i class="ocultar tachePrecio fa-regular fa-circle-xmark"></i>
+            <i class="ocultar buenaPrecio fa-regular fa-circle-check"></i>
+
+            <label for="departamento">Departamento: </label><span class="ocultar mensajeDepartamento">(Departamento no válido)</span>
+            <input name="departamento" id="departamento" placeholder="Departamento" type="text">
+            <i class="ocultar tacheDepartamento fa-regular fa-circle-xmark"></i>
+            <i class="ocultar buenaDepartamento fa-regular fa-circle-check"></i>
+            <button type="submit">Registrar datos</button>
+        </form>        
+    </div>
+</body>
+</html>
